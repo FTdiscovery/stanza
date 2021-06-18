@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>36</sentences><tokens>1111</tokens><words>1122</words><fused>7</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>36</sentences><tokens>1111</tokens><words>1122</words><fused>7</fused></test>
+  </size>
+  <lemmas unique="406" /><!-- ,, de, un, dat, ., weasen, hee, ik, hebben, in, dår, ', en, to, ; -->
+  <forms unique="517" /><!-- ,, de, un, ., dat, en, in, hee, ', dee, ;, an, as, ik, is -->
+  <fusions unique="7" /><!-- Kumste, im, in'en, in't, ten, to'm, van'er -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="15">
+    <tag name="ADJ">66</tag><!-- ander, eyrst, good, veale, grout, valsk, angst, anseenlik, bedächtig, beide -->
+    <tag name="ADP">79</tag><!-- in, an, van, to, mid, up, öäver, by, geagen, nå -->
+    <tag name="ADV">113</tag><!-- dår, ouk, sou, wol, men, noch, wår, do, gelyks, mål -->
+    <tag name="AUX">62</tag><!-- weasen, hebben, willen, künnen, sköälen, werden, möägen, möten -->
+    <tag name="CCONJ">50</tag><!-- un, men, as -->
+    <tag name="DET">115</tag><!-- de, en, syn, myn, dat, ear, et, juw, dee, den -->
+    <tag name="INTJ">2</tag><!-- ja, nu -->
+    <tag name="NOUN">149</tag><!-- dag, junge, vrouwe, buur, kind, klump, kop, köäke, lüde, moder -->
+    <tag name="NUM">7</tag><!-- eyn, dree, twey -->
+    <tag name="PART">16</tag><!-- nich, to, en, te -->
+    <tag name="PRON">126</tag><!-- hee, ik, dat, sik, dee, see, jy, al, et, dår -->
+    <tag name="PROPN">21</tag><!-- Hente, Hiärmen, Winkel, Andrees, Bennad, Dreier, Eskes, Garrelt, Göttin, Havel -->
+    <tag name="PUNCT">157</tag><!-- ,, ., ', ;, !, :, ", ?, - -->
+    <tag name="SCONJ">29</tag><!-- dat, as, of, sind, wan, wyl, üm -->
+    <tag name="VERB">130</tag><!-- hebben, koamen, loupen, låten, sitten, seggen, höyren, stån, blyven, doon -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="0">
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="30">
+    <dep name="acl">14</dep>
+    <dep name="advcl">20</dep>
+    <dep name="advmod">119</dep>
+    <dep name="amod">33</dep>
+    <dep name="appos">1</dep>
+    <dep name="aux">38</dep>
+    <dep name="case">76</dep>
+    <dep name="cc">47</dep>
+    <dep name="ccomp">8</dep>
+    <dep name="compound">11</dep>
+    <dep name="conj">50</dep>
+    <dep name="cop">20</dep>
+    <dep name="csubj">1</dep>
+    <dep name="det">117</dep>
+    <dep name="discourse">1</dep>
+    <dep name="dislocated">3</dep>
+    <dep name="expl">7</dep>
+    <dep name="fixed">1</dep>
+    <dep name="flat">5</dep>
+    <dep name="iobj">13</dep>
+    <dep name="mark">35</dep>
+    <dep name="nmod">8</dep>
+    <dep name="nsubj">116</dep>
+    <dep name="nummod">4</dep>
+    <dep name="obj">69</dep>
+    <dep name="obl">72</dep>
+    <dep name="parataxis">29</dep>
+    <dep name="punct">157</dep>
+    <dep name="root">36</dep>
+    <dep name="xcomp">11</dep>
+  </deps>
+</treebank>

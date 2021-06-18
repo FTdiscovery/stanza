@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>2319</sentences><tokens>18502</tokens><words>20630</words><fused>2079</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>2319</sentences><tokens>18502</tokens><words>20630</words><fused>2079</fused></test>
+  </size>
+  <lemmas unique="2303" /><!-- eh, ., bee, yn, er, ec, ,, dy, as, ayns, ny, cur, da, mee, e -->
+  <forms unique="2911" /><!-- eh, ., er, yn, t', ny, ta, ec, ,, y, dy, as, ayns, da, e -->
+  <fusions unique="242" /><!-- t'eh, echey, er, da, 'sy, ta'n, jeh, v'eh, da'n, orrym, dou, jeh'n, ayn, 'syn, lesh -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="17">
+    <tag name="ADJ">996</tag><!-- mie, mooar, erbee, beg, elley, olk, drogh, currit, jeant, ennagh -->
+    <tag name="ADP">2740</tag><!-- er, ec, ayns, da, jeh, dy, lesh, rish, ass, y -->
+    <tag name="ADV">399</tag><!-- magh, stiagh, nish, reesht, rieau, seose, feer, foast, sheese, ersooyl -->
+    <tag name="AUX">69</tag><!-- she -->
+    <tag name="CCONJ">334</tag><!-- as, agh, ny, chamoo -->
+    <tag name="DET">1899</tag><!-- yn, e, ny, my, dty, dagh, ooilley, shoh, nyn, shen -->
+    <tag name="INTJ">12</tag><!-- o, oh, ahh, atreih, aye, wahll -->
+    <tag name="NOUN">4230</tag><!-- jannoo, cur, dooinney, laue, thie, goll, red, kione, ve, argid -->
+    <tag name="NUM">144</tag><!-- daa, feed, un, keead, kiare, queig, jeih, kied, tree, shiaght -->
+    <tag name="PART">461</tag><!-- dy, cha, ny, nagh, nar -->
+    <tag name="PRON">3290</tag><!-- eh, mee, ad, oo, ee, hene, shen, shin, shiu, shoh -->
+    <tag name="PROPN">319</tag><!-- Gaelg, Jee, Ealish, Mannin, manninagh, Baarle, Israel, Juan, Nerin, Doolish -->
+    <tag name="PUNCT">2942</tag><!-- ., ,, ?, “, ”, :, !, ;, ", ( -->
+    <tag name="SCONJ">71</tag><!-- as, tra, my, myr, son, ga, mannagh, choud, ny, cre -->
+    <tag name="SYM">3</tag><!-- r, £ -->
+    <tag name="VERB">2716</tag><!-- bee, jean, cur, tar, gow, fow, fod, abbyr, lhig, tuitt -->
+    <tag name="X">5</tag><!-- X, a.r.e., chess, chessmen, zee -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="34">
+    <feat name="Case" value="Gen" upos="DET">25</feat><!-- ny -->
+    <feat name="Definite" value="Def" upos="DET">1151</feat><!-- yn, y, ny, 'n -->
+    <feat name="Degree" value="Cmp,Sup" upos="ADJ">69</feat><!-- share, smoo, smessey, sloo, s'gilley, s'messey, s'keoiey, s'odjey, vessey, messey -->
+    <feat name="Form" value="Ecl" upos="NOUN,VERB">201</feat><!-- vel, nod, dug, ver, vod, jeet, daink, naik, Verym, darragh -->
+    <feat name="Form" value="Ecl,Emp" upos="VERB">1</feat><!-- noddyms -->
+    <feat name="Form" value="Emp" upos="NOUN,VERB">6</feat><!-- beem's, beigns, bwoaill-yms, chione's, freill-yms, insh-yms -->
+    <feat name="Form" value="Emp,Len" upos="NOUN,VERB">6</feat><!-- Yiarrins, chree's, churryms, ghliooneen's, hons, oddins -->
+    <feat name="Form" value="HPref" upos="NOUN,PROPN">17</feat><!-- hoi, henneeyn, h-Eearvee, h-Ellanyn, h-Inshey, h-Oarpey, h-awin, h-ayr, haggle, henmyn -->
+    <feat name="Form" value="Len" upos="ADJ,NOUN,NUM,PROPN,VERB">1840</feat><!-- hug, va, haink, v', hooar, hie, Huitt, ghooinney, ghow, cheau -->
+    <feat name="Gender" value="Fem" upos="DET,PRON">164</feat><!-- ee, e, ny, ish, n' -->
+    <feat name="Gender" value="Masc" upos="DET,PRON">2659</feat><!-- eh, e, ny, n', eshyn, n -->
+    <feat name="Mood" value="Cnd" upos="VERB">38</feat><!-- lhisagh, beagh, yinnagh, oddagh, darragh, jinnagh, Veagh, Chredjagh, Veign, Yiarrins -->
+    <feat name="Mood" value="Imp" upos="VERB">181</feat><!-- cur, jean, lhig, tar, gow, immee, Smooinee, bee, bee-jee, insh -->
+    <feat name="Mood" value="Ind" upos="VERB">2497</feat><!-- t', ta, ren, hug, va, vel, haink, v', nel, hooar -->
+    <feat name="Number" value="Plur" upos="ADJ,DET,PRON,VERB">448</feat><!-- ny, ad, shin, shiu, nyn, adsyn, beggey, bee-jee, shiuish, aegey -->
+    <feat name="Number" value="Sing" upos="DET,PRON,VERB">4541</feat><!-- eh, yn, y, e, mee, ny, oo, 'n, ee, my -->
+    <feat name="PartType" value="Ad" upos="PART">104</feat><!-- dy -->
+    <feat name="PartType" value="Cmpl" upos="PART">99</feat><!-- dy, nagh -->
+    <feat name="PartType" value="Comp" upos="PART">41</feat><!-- ny -->
+    <feat name="PartType" value="Inf" upos="ADP">33</feat><!-- y -->
+    <feat name="PartType" value="Vb" upos="PART">184</feat><!-- cha, Ny, nagh, dy, N' -->
+    <feat name="Person" value="1" upos="DET,PRON,VERB">396</feat><!-- mee, my, shin, mish, m', nyn, Verym, bee'm, mayd, nee'm -->
+    <feat name="Person" value="2" upos="DET,PRON,VERB">434</feat><!-- oo, dty, cur, shiu, jean, ou, uss, lhig, tar, gow -->
+    <feat name="Person" value="3" upos="DET,PRON">2992</feat><!-- eh, e, ny, ad, ee, n', eshyn, nyn, adsyn, ish -->
+    <feat name="Polarity" value="Neg" upos="AUX,PART">176</feat><!-- cha, nagh, Nar -->
+    <feat name="Poss" value="Yes" upos="DET">572</feat><!-- e, ny, my, dty, n', nyn, dt', m', n -->
+    <feat name="PronType" value="Art" upos="DET">1151</feat><!-- yn, y, ny, 'n -->
+    <feat name="PronType" value="Dem" upos="PRON">112</feat><!-- shen, shoh -->
+    <feat name="PronType" value="Emp" upos="PRON">103</feat><!-- eshyn, mish, uss, adsyn, ish, shiuish, shinyn -->
+    <feat name="Reflex" value="Yes" upos="PRON">106</feat><!-- hene -->
+    <feat name="Tense" value="Fut" upos="VERB">155</feat><!-- nee, foddee, bee, nod, vod, jean, ver, Verym, hig, vees -->
+    <feat name="Tense" value="Past" upos="VERB">1277</feat><!-- ren, hug, va, haink, v', hooar, row, dooyrt, hie, Huitt -->
+    <feat name="Tense" value="Pres" upos="VERB">1065</feat><!-- t', ta, vel, nel, saillym, Dobbyr, Strooys, er -->
+    <feat name="Typo" value="Yes" upos="NOUN">2</feat><!-- charrrey, okley -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="37">
+    <dep name="acl">34</dep>
+    <dep name="acl:relcl">120</dep>
+    <dep name="advcl">86</dep>
+    <dep name="advmod">527</dep>
+    <dep name="amod">555</dep>
+    <dep name="appos">47</dep>
+    <dep name="case">2666</dep>
+    <dep name="cc">334</dep>
+    <dep name="ccomp">75</dep>
+    <dep name="compound">6</dep>
+    <dep name="conj">304</dep>
+    <dep name="cop">68</dep>
+    <dep name="csubj:cleft">21</dep>
+    <dep name="csubj:cop">14</dep>
+    <dep name="dep">1</dep>
+    <dep name="det">1311</dep>
+    <dep name="discourse">12</dep>
+    <dep name="fixed">71</dep>
+    <dep name="flat">26</dep>
+    <dep name="flat:foreign">4</dep>
+    <dep name="iobj">2</dep>
+    <dep name="mark">558</dep>
+    <dep name="nmod">893</dep>
+    <dep name="nmod:poss">572</dep>
+    <dep name="nsubj">2461</dep>
+    <dep name="nummod">103</dep>
+    <dep name="obj">1104</dep>
+    <dep name="obl">1609</dep>
+    <dep name="obl:tmod">13</dep>
+    <dep name="orphan">2</dep>
+    <dep name="parataxis">116</dep>
+    <dep name="punct">2942</dep>
+    <dep name="reparandum">2</dep>
+    <dep name="root">2319</dep>
+    <dep name="vocative">22</dep>
+    <dep name="xcomp">778</dep>
+    <dep name="xcomp:pred">852</dep>
+  </deps>
+</treebank>

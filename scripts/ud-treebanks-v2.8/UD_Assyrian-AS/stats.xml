@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>57</sentences><tokens>453</tokens><words>453</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>57</sentences><tokens>453</tokens><words>453</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="240" /><!-- ., ܗܵܘܹܐ, ܘ, ܕ, ?, ܐܵܗܵܐ, ܐܵܢܝܼ, ܠ, ܡܼܢ, ܒ, ܠܵܐ, ,, :, ܐܝܼܣܚܵܩ, ܓܵܘ -->
+  <forms unique="254" /><!-- ., ܘ, ܕ, ?, ܝܠܹܗ, ܐܵܗܵܐ, ܐܵܢܝܼ, ܝܠܵܗܿ, ܝ݇ܢܵܐ, ܠ, ܒ, ܠܵܐ, ܠܸܗ, ܩܵܐ, , -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="13">
+    <tag name="ADJ">32</tag><!-- ܐ̄ܚܵܪܵܝܐ, ܐܬܘܿܪܵܝܬܵܐ, ܐܵܟܼܠܵܢܵܐ, ܐܵܬ̣ܘܪܵܝܵܐ, ܐܵܬ̣ܘܿܪܵܝܐ, ܐܵܬܘܿܪܵܝܐ, ܒܬܘܼܠܵܐ, ܓܒ̣ܝܼܪ̈ܐ, ܓܒ̣ܝܼܪܐ, ܓܒܼܝܼܪܵܐ -->
+    <tag name="ADP">38</tag><!-- ܠ, ܡܼܢ, ܕ, ܒ, ܓܵܘ, ܩܵܐ, ܒܸ, ܒܘܕ, ܒܘܼܬ, ܒܵܬܪ -->
+    <tag name="ADV">16</tag><!-- ܪܵܒܵܐ, ܐܘܼܦ, ܐܝܟܵܐ, ܐܝܼܡܲܢ, ܐܲܝܟܵܐ, ܐܲܟ̣ܲܐ, ܐܵܕܝܼܐ, ܐܵܕܝܼܵܐ, ܟܠܗ, ܟܠܝܘܿܡ -->
+    <tag name="AUX">51</tag><!-- ܗܵܘܹܐ, ܒܸܕ, ܒܸܬ, ܟܹܐ, ܒ, ܒܹܬ, ܟܲܕ, ܟܸܐ, ܡܵܨܸܢ, ܦܵܝܫ -->
+    <tag name="CCONJ">25</tag><!-- ܘ, ܝܲܢ, ܐܝܼܢܵܐ -->
+    <tag name="DET">16</tag><!-- ܐܵܗܵܐ, ܚܲܕ, ܚܲܕ݇, ܐܲܢܹܐ, ܕ, ܗܿܘ, ܚܕܵܐ, ܚܕ݇, ܟܠ -->
+    <tag name="NOUN">73</tag><!-- ܒܪܵܬܵܐ, ܚܲܒܘܼܫܵܐ, ܚܲܒܼܪܐ, ܟܬܵܒܼܵܐ, ܫܠܵܡܵܐ, ܐܝܼܠܵܢܵܐ, ܐܘܼܡܬܐ, ܐܘܼܡܬܵܐ, ܐܝܼܕܹܗ, ܐܸܕܝܘܿܡ -->
+    <tag name="PART">19</tag><!-- ܕ, ܠܵܐ, ܠܸܐ, ܠܹܐ -->
+    <tag name="PRON">43</tag><!-- ܐܵܢܝܼ, ܠܸܗ, ܐܵܢܵܐ, ܠܹܗ, ܐܲܢ݇ܬ, ܡܘܼܕܝܼ, ܐܲܚܬܘܢ, ܐܲܚܲܢ, ܐܵܗܵܐ, ܐܸܠܲܟ̣ܘܢ -->
+    <tag name="PROPN">12</tag><!-- ܐܝܼܣܚܵܩ, ܐܢܛܘܢܝܘ, ܐܲܠܵܗܵܐ, ܐܵܫܘܼܪ, ܐܼܿܪܒܹܝܠ, ܡܵܪܝܵܐ, ܢܝܼܢܘܹܐ, ܢܨܝܼܒ̣ܝܼܢ, ܬܗܪܵܢ -->
+    <tag name="PUNCT">66</tag><!-- ., ?, ,, :, _, ، -->
+    <tag name="SCONJ">5</tag><!-- ܕ, ܐܸܢ, ܗܲܠ -->
+    <tag name="VERB">57</tag><!-- ܝܵܗܹܒ݂, ܐܡܸܪ, ܩܵܐܸܡ, ܐܡܪ, ܐܬܝܐ, ܐܵܙܹܠ, ܐܵܣܩ, ܐܵܬܲ, ܐܵܬܹܐ, ܐ݇ܡܸܪ -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="23">
+    <feat name="Case" value="Acc" upos="PRON">5</feat><!-- ܠܸܗ, ܒܝܼܵܗܿ, ܒܹܗ -->
+    <feat name="Case" value="Nom" upos="PRON">7</feat><!-- ܐܵܢܝܼ, ܐܲܚܬܘܢ, ܗܵܘ̇, ܗܿܝ -->
+    <feat name="Definite" value="Def" upos="DET">2</feat><!-- ܐܵܗܵܐ, ܗ̇ܘ -->
+    <feat name="Definite" value="Ind" upos="DET">7</feat><!-- ܚܲܕ݇, ܚܲܕ, ܚܕܵܐ, ܚܕ݇ -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">40</feat><!-- ܝܠܵܗܿ, ܗܵܘܢܵܢܬܵܐ, ܝܼܘܵܢ, ܐ̄ܚܵܪܵܝܬܵܐ, ܐܘܼܡܬܝܼ, ܐܘܼܡܬܵܐ, ܐܝܼܕܹܗ, ܐܬܘܿܪܵܝܬܵܐ, ܐܵܗܵܐ, ܐܵܬ̣ܘܿܪܵܝܬ̣ܵܐ -->
+    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">114</feat><!-- ܝܠܹܗ, ܠܸܗ, ܐܝܼܣܚܵܩ, ܚܲܕ݇, ܟܬܵܒܼܵܐ, ܫܠܵܡܵܐ, ܐ݇ܡܸܪܹܗ, ܓܵܢܹܗ, ܚܲܕ, ܝܘܸܢ -->
+    <feat name="Mood" value="Imp" upos="VERB">3</feat><!-- ܦܪܘܫ, ܩܲܒܸܠ, ܬܸܝܡܘܿܢ -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">23</feat><!-- ܝܠܵܗܿ, ܝܠܹܗ, ܝ݇ܢܵܐ, ܝܢܵܐ, ܒܝܕܥܝܐ, ܝܘܸܢ, ܝܠܸܗ, ܝܠܹܐ, ܝ݇ܬܘܢ, ܟܸܐ -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,VERB">43</feat><!-- ܝ݇ܢܵܐ, ܐܵܢܝܼ, ܝܢܵܐ, ܒܢܵܬܹ̈ܐ, ܐܲܚܢܲܢ, ܐܲܚܬܘܢ, ܐܲܢܹܐ, ܐܵܬ̣ܘܪܵܝܵܐܸ, ܐܵܬܘܿܪܵܝܹܐ, ܐܵܬܲܚ -->
+    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">174</feat><!-- ܝܠܹܗ, ܝܠܵܗܿ, ܐܵܗܵܐ, ܐܝܼܣܚܵܩ, ܝܘܸܢ, ܠܸܗ, ܐܵܢܵܐ, ܚܲܕ݇, ܟܬܵܒܼܵܐ, ܫܠܵܡܵܐ -->
+    <feat name="Person" value="1" upos="AUX,NOUN,PRON,VERB">30</feat><!-- ܝܘܸܢ, ܐܵܢܵܐ, ܝܼܘܵܢ, ܐܲܚܢܲܢ, ܐܵܣܩܸܢ, ܐܵܬܲܚ, ܕܝܲܢ, ܕܝܼܲܢ, ܕܪܵܫܝܼ, ܕܪܵܫܲܢ -->
+    <feat name="Person" value="2" upos="AUX,NOUN,PRON,VERB">18</feat><!-- ܐܲܢ݇ܬ, ܐܲܚܬܘܢ, ܐܸܠܲܟ̣ܘܢ, ܒܵܒܘܼܟ̣, ܓܵܡܝܼ̈ܘܼܟ, ܕܝܼܘܼܟܼ, ܕܵܪܸܝܬ̇, ܝܘܼܗܒ̣ܸܠܘܼܟܼ, ܝ݇ܘܸܬ, ܝ݇ܘܹܬ -->
+    <feat name="Person" value="3" upos="AUX,NOUN,PRON,PROPN,VERB">64</feat><!-- ܝܠܹܗ, ܝܠܵܗܿ, ܝ݇ܢܵܐ, ܐܵܢܝܼ, ܝܢܵܐ, ܐ݇ܡܸܪܹܗ, ܓܵܢܹܗ, ܝܠܹܐ, ܠܸܗ, ܬܘܼܚܡܸܢܹܗ -->
+    <feat name="Poss" value="Yes" upos="NOUN,PRON">21</feat><!-- ܐܘܼܡܬܝܼ, ܒܵܒܘܼܟ̣, ܓܵܡܝܼ̈ܘܼܟ, ܕܝܲܢ, ܕܝܼܘܼܟܼ, ܕܝܼܲܢ, ܕܝܼܵܗ, ܕܪܵܫܝܼ, ܘܲܪ̈ܕܸܐ, ܚܘܼܒܝܼ -->
+    <feat name="PronType" value="Art" upos="DET">7</feat><!-- ܚܲܕ݇, ܚܲܕ, ܚܕܵܐ, ܚܕ݇ -->
+    <feat name="PronType" value="Dem" upos="DET">3</feat><!-- ܐܵܗܵܐ -->
+    <feat name="PronType" value="Int" upos="PRON">1</feat><!-- ܕ -->
+    <feat name="PronType" value="Prs" upos="PRON">26</feat><!-- ܐܵܢܝܼ, ܠܸܗ, ܐܲܢ݇ܬ, ܐܵܢܵܐ, ܐܲܚܢܲܢ, ܐܲܚܬܘܢ, ܒܝܼܵܗܿ, ܒܹܗ, ܕܝܲܢ, ܕܝܼܘܼܟܼ -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">3</feat><!-- ܚܙܸܐܠܸܗ, ܝ݇ܬܝܼܒܵܐ, ܥܢܸܐܠܸܗ -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">46</feat><!-- ܝܠܹܗ, ܝܠܵܗܿ, ܝ݇ܢܵܐ, ܝܢܵܐ, ܝܘܸܢ, ܝܠܹܐ, ܐܵܣܩܸܢ, ܒܝܕܥܝܐ, ܒܸܐܬܵܝܵܐ, ܒܸܩܪܵܝܵܐ -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">22</feat><!-- ܝܠܵܗܿ, ܝܠܹܗ, ܝ݇ܢܵܐ, ܝܢܵܐ, ܝܘܸܢ, ܝܠܸܗ, ܝܠܹܐ, ܝ݇ܬܘܢ, ܬܸܝܡܘܿܢ -->
+    <feat name="VerbForm" value="Part" upos="VERB">6</feat><!-- ܒܸܐܬܵܝܵܐ, ܒܸܩܪܵܝܵܐ, ܒܹܐܙܵܠܵܐ, ܟ̰ܘܼܢܒܸܠܵܐ, ܡܘ̣ܦܠ݀ܚܬܵܐ, ܡܘܿܫܸܬܝܵܐ -->
+    <feat name="Voice" value="Pass" upos="VERB">1</feat><!-- ܡܘܿܫܸܬܝܵܐ -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="27">
+    <dep name="acl">1</dep>
+    <dep name="acl:relcl">2</dep>
+    <dep name="advcl">11</dep>
+    <dep name="advmod">22</dep>
+    <dep name="amod">5</dep>
+    <dep name="aux">18</dep>
+    <dep name="aux:pass">1</dep>
+    <dep name="case">43</dep>
+    <dep name="cc">25</dep>
+    <dep name="ccomp">3</dep>
+    <dep name="compound">4</dep>
+    <dep name="conj">24</dep>
+    <dep name="cop">32</dep>
+    <dep name="csubj">1</dep>
+    <dep name="det">16</dep>
+    <dep name="iobj">7</dep>
+    <dep name="mark">10</dep>
+    <dep name="nmod">17</dep>
+    <dep name="nmod:poss">2</dep>
+    <dep name="nsubj">40</dep>
+    <dep name="nsubj:pass">1</dep>
+    <dep name="obj">24</dep>
+    <dep name="obl">16</dep>
+    <dep name="parataxis">2</dep>
+    <dep name="punct">66</dep>
+    <dep name="root">57</dep>
+    <dep name="xcomp">3</dep>
+  </deps>
+</treebank>

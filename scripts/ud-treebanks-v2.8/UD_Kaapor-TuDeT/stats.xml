@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>61</sentences><tokens>240</tokens><words>240</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>61</sentences><tokens>240</tokens><words>240</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="124" /><!-- ihẽ, ke, aʔe, ne, pe, tĩ, ,, ho, je, ʔu, ʔɪ, jan, karãj, riki, uʔi -->
+  <forms unique="152" /><!-- ihẽ, ke, pe, aʔe, ihẽke, tĩ, ,, je, neke, oho, ne, uʔuta, ʔɪ, aʔeke, riki -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="13">
+    <tag name="ADJ">1</tag><!-- panem -->
+    <tag name="ADP">3</tag><!-- ehe, pe -->
+    <tag name="ADV">18</tag><!-- pe, tĩ, _, aja, ajameʔẽ, apo, aʔerehe, riki, teʔe, uhu -->
+    <tag name="AUX">5</tag><!-- ʔɪ, ho -->
+    <tag name="CCONJ">1</tag><!-- pe -->
+    <tag name="DET">2</tag><!-- ko, upa -->
+    <tag name="NOUN">51</tag><!-- uʔi, Tapi, _, kɪ, pɪpɪhu, taɁɪn, ʔok, arapuha, aʔi, aʔɪn -->
+    <tag name="PART">26</tag><!-- ke, je, tĩ, riki, ta, mi, tipe, ã -->
+    <tag name="PRON">45</tag><!-- ihẽ, aʔe, ne, _, a’e, a'e, jane, pehẽ -->
+    <tag name="PROPN">16</tag><!-- Maíra, _, ʃaʔe, Ana, Arauxu, Kaninde, Oropo, Tuti, maiɾ, mataru -->
+    <tag name="PUNCT">6</tag><!-- ,, ? -->
+    <tag name="SCONJ">2</tag><!-- rahã -->
+    <tag name="VERB">64</tag><!-- ʔu, ho, _, jan, karãj, jengar, jiʔok, mujã, nupã, pɪnu -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="16">
+    <feat name="Animacy" value="Anim" upos="NOUN">2</feat><!-- Tapiʔir -->
+    <feat name="Animacy" value="Hum" upos="NOUN,PRON,PROPN">5</feat><!-- aʔe, Mataru, kurumĩ, ʃaʔe -->
+    <feat name="Aspect" value="Frus" upos="PART">1</feat><!-- tipe -->
+    <feat name="Aspect" value="Perf" upos="AUX">3</feat><!-- ʔɪ -->
+    <feat name="Case" value="Aff" upos="NOUN,PRON,PROPN">25</feat><!-- ihẽke, neke, taɁɪnke, uʔike, a’etake, ehake, hãʔĩmke, ikɪke, ipɪke, kakake -->
+    <feat name="Intense" value="Yes" upos="VERB">3</feat><!-- piɾokhũ, pɪnuhũ, pɪnupɪnuate -->
+    <feat name="Nomzr" value="Circ" upos="NOUN">1</feat><!-- jeʔẽha -->
+    <feat name="Number" value="Plur" upos="NOUN,PRON,VERB">5</feat><!-- a’eta, a’etake, hãʔĩmke, peharõta -->
+    <feat name="Number" value="Sing" upos="NOUN,PRON,PROPN,VERB">21</feat><!-- Tapiʔir, aʔe, Mataru, ahota, akarãj, amujã, apɪhɪk, araho, ihẽ, jane -->
+    <feat name="Person" value="1" upos="PRON,VERB">17</feat><!-- ihẽ, ahota, ajapi, ajengar, ajumukahem, akarãj, akutukta, amujengar, amujã, amuɁe -->
+    <feat name="Person" value="2" upos="PRON,VERB">8</feat><!-- rekarãjta, eremuɁe, neke, peharõta, remupuʔam, renupã, reʔutĩ -->
+    <feat name="Person" value="3" upos="AUX,NOUN,PRON,VERB">38</feat><!-- oho, uʔuta, aʔe, ujan, ahem, ajiʔok, aʔar, hapɪ, ihĩ, jiʔok -->
+    <feat name="Rel" value="Cont" upos="ADP,NOUN">5</feat><!-- ehake, jukwahá, miʔuke, raʔɪr, rehe -->
+    <feat name="Rel" value="NCont" upos="ADP,NOUN">7</feat><!-- ehe, heɁõɁɪ, huʔɨ, ikɪ, ikɪke, indo, ipɪke -->
+    <feat name="Tense" value="Fut" upos="VERB">10</feat><!-- uʔuta, rekarãjta, ahota, akutukta, peharõta, ukwerta -->
+    <feat name="Voice" value="Cau" upos="VERB">7</feat><!-- ajumukahem, amujengar, amuɁe, eremuɁe, muwak, remupuʔam, remusak -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="19">
+    <dep name="advcl">3</dep>
+    <dep name="advmod">18</dep>
+    <dep name="amod">1</dep>
+    <dep name="aux">5</dep>
+    <dep name="case">2</dep>
+    <dep name="cc">1</dep>
+    <dep name="compound">2</dep>
+    <dep name="conj">1</dep>
+    <dep name="det">1</dep>
+    <dep name="discourse">21</dep>
+    <dep name="iobj">1</dep>
+    <dep name="mark">2</dep>
+    <dep name="nmod">12</dep>
+    <dep name="nsubj">53</dep>
+    <dep name="obj">45</dep>
+    <dep name="obl">4</dep>
+    <dep name="punct">6</dep>
+    <dep name="root">61</dep>
+    <dep name="xcomp">1</dep>
+  </deps>
+</treebank>

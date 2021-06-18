@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>1907</sentences><tokens>20878</tokens><words>23582</words><fused>2619</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>1907</sentences><tokens>20878</tokens><words>23582</words><fused>2619</fused></test>
+  </size>
+  <lemmas unique="1570" /><!-- ša, ina, šarru, ana, mātu, Aššur, ištu, u, ālu, adi, māru, lū, dannu, rabû, kiššatu -->
+  <forms unique="2923" /><!-- ša, ina, šu, ana, ya, šunu, šar, Aššur, u, ma, māt, ultu, adi, lū, mār -->
+  <fusions unique="618" /><!-- Aššurma, šallassunu, mātiya, bēliya, elišunu, šarrūtiya, kakkīya, šēpīya, bēlūtiya, sihirtiša, dēktašunu, ūmešuma, gimriša, kalîšina, pāniya -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="13">
+    <tag name="ADJ">947</tag><!-- rabû, dannu, _, mādu, rapšu, balṭu, marṣu, qardu, lā|pādû, kabtu -->
+    <tag name="ADP">3141</tag><!-- ina, ša, ana, ištu, adi, eli, kīma, itti, warki, kī -->
+    <tag name="ADV">167</tag><!-- elēnu, inūma, u, danniš, pānu, nalbân, _, kīniš, mādiš, pāna -->
+    <tag name="CCONJ">477</tag><!-- u, _, lū -->
+    <tag name="DET">161</tag><!-- kalû, šū, šuāti, annû, ammiu, šī, gabbu, kalāma, mimma, šuātunu -->
+    <tag name="NOUN">8922</tag><!-- šarru, mātu, _, ālu, māru, kiššatu, bēlu, šadû, ēkallu, ilu -->
+    <tag name="NUM">333</tag><!-- _, _|meʾatu, _|meʾatu|_, _|līm, erbe, 20, 30, ištēn, _|līm|_|meʾatu, arbaʾu -->
+    <tag name="PART">501</tag><!-- lū, _, lā, mā, ul, ma -->
+    <tag name="PRON">2696</tag><!-- _, ša, mammāna, anāku, ammar, mannu, šuāti, mamman, yâši, attunu -->
+    <tag name="PROPN">3057</tag><!-- Aššur, Aššur-naṣir-apli_II, Tukulti-Ninurta_II, Adad-narari_II, Enlil, Šamaš, Purattu, _, Adad, Ninurta -->
+    <tag name="SCONJ">35</tag><!-- kī, ša, inūma, ašru, ašāru, aššu, warki, šumma -->
+    <tag name="VERB">3141</tag><!-- _, šakānu, ṣabātu, namāšu, kašādu, mahāru, epēšu, târu, dâku, šalālu -->
+    <tag name="X">4</tag><!-- _, Karduniaš -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="37">
+    <feat name="Case" value="Acc" upos="ADJ,DET,NOUN,PRON,PROPN">268</feat><!-- āla, šaṭra, būša, kabitta, lā pādâ, maʾatta, dīkta, maddatta, māhira, dūra -->
+    <feat name="Case" value="Gen" upos="ADJ,DET,NOUN,NUM,PROPN,VERB">3227</feat><!-- kiššati, libbi, māti, bēli, siparri, šarrūti, muhhi, qereb, Nairi, sihirti -->
+    <feat name="Case" value="Loc" upos="ADP,NOUN">29</feat><!-- limētuš, baluš, biriquš, qātuš -->
+    <feat name="Case" value="Nom" upos="ADJ,DET,NOUN,PROPN,VERB">1169</feat><!-- šarru, maddattu, dannu, rabû, rubû, šadû, biltu, bēlu, ālu, qardu -->
+    <feat name="Gender" value="Com" upos="ADJ,NOUN,VERB">2072</feat><!-- attumuš, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib, aṣbat, arṣip -->
+    <feat name="Gender" value="Fem" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">3896</feat><!-- māt, kiššati, ša, maddattu, ummānāti, māti, šallas, ēkal, mātāti, šina -->
+    <feat name="Gender" value="Masc" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">10254</feat><!-- šu, šunu, šar, Aššur, mār, šarru, ālāni, libbi, sunu, ilāni -->
+    <feat name="Mood" value="Imp" upos="VERB">12</feat><!-- uddiš, tēr, balliṭ, dūku, epuš, hulliq, taʾer, uddiši, šutur -->
+    <feat name="Mood" value="Ind" upos="VERB">2684</feat><!-- attumuš, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib, aṣbat, arṣip -->
+    <feat name="Mood" value="Prec" upos="VERB">96</feat><!-- luddiš, lutēr, lukinnū, luhalliqū, liskipū, lipšuš, liqqi, lušēšibū, līkimū, libriq -->
+    <feat name="Mood" value="Proh" upos="VERB">31</feat><!-- ušabbā, tapaššiṭ, ušamsak, ekkim, erraba, essir, eṣṣidi, ihassasa, ikassir, imahhar -->
+    <feat name="NounBase" value="Bound" upos="ADJ,NOUN,NUM,VERB">2707</feat><!-- šar, māt, mār, ēkal, bīt, iššak, pān, āl, šakin, ebertān -->
+    <feat name="NounBase" value="Free" upos="ADJ,DET,NOUN,NUM,VERB">2653</feat><!-- kiššati, šarru, maddattu, libbi, siparri, išātāti, mātāti, ummānāti, rubû, narkabāti -->
+    <feat name="NounBase" value="Suffixal" upos="NOUN,PROPN,VERB">2035</feat><!-- šallas, māti, bēli, šēpī, šum, šarrūti, sihirti, ummānāti, kakkī, bēlūti -->
+    <feat name="NounBase" value="Terminal" upos="NOUN">40</feat><!-- bilat, mana, qāta -->
+    <feat name="Number" value="Plur" upos="ADJ,DET,NOUN,PRON,PROPN,VERB">4110</feat><!-- šunu, ālāni, sunu, ilāni, ummānāti, alpī, kakkī, mātāti, rabûti, šina -->
+    <feat name="Number" value="Sing" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">11358</feat><!-- šu, ya, šar, māt, mār, kiššati, šarru, ša, libbi, maddattu -->
+    <feat name="Person" value="1" upos="ADJ,NOUN,PRON,VERB">2828</feat><!-- ya, attumuš, ī, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib -->
+    <feat name="Person" value="2" upos="PRON,VERB">37</feat><!-- ka, hadāt, ki, tušaršidu, uddiš, tapaššiṭ, tēr, attunu, balliṭ, dūku -->
+    <feat name="Person" value="3" upos="DET,NOUN,PRON,VERB">2679</feat><!-- šu, šunu, ša, sunu, su, šina, bēde, ittallaku, īšû, ikšud -->
+    <feat name="Subordinative" value="Yes" upos="PART,VERB">391</feat><!-- ittallaku, īšû, ni, ipēlu, apēlu, šaknū, ipparšidūni, usbakūni, ikšudu, šaknu -->
+    <feat name="Tense" value="Past" upos="VERB">2560</feat><!-- attumuš, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib, aṣbat, arṣip -->
+    <feat name="Tense" value="Pres" upos="VERB">155</feat><!-- ipaššiṭu, irammū, išemme, inabbû, iqabbû, išakkanu, išemmû, ukallūni, eppašu, išubbū -->
+    <feat name="Ventive" value="Yes" upos="VERB">292</feat><!-- ašlula, uṣabbita, ubla, ušekniša, utēra, ittumša, ētarba, alqâ, attumša, ūrdūni -->
+    <feat name="VerbForm" value="Fin" upos="VERB">2823</feat><!-- attumuš, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib, aṣbat, arṣip -->
+    <feat name="VerbForm" value="Inf" upos="VERB">105</feat><!-- šūzub, epēš, arāk, šumʾud, uppušu, pêli, šuknuše, hulluq, napāhi, šapāri -->
+    <feat name="VerbForm" value="Stat" upos="ADJ,NOUN,VERB">256</feat><!-- bēde, bēdāk, šaknū, ṣali, usbakūni, šaknu, bašû, labi, ašarēdāku, dān -->
+    <feat name="VerbStem" value="D" upos="VERB">441</feat><!-- utēr, uṣabbita, ušarrih, ukīn, ussim, utēra, luddiš, unakkir, lutēr, umessi -->
+    <feat name="VerbStem" value="Dt" upos="VERB">4</feat><!-- tugdaššara, uttakkaru, uštarrih, šutarruhu -->
+    <feat name="VerbStem" value="G" upos="VERB">2262</feat><!-- attumuš, akšud, adūk, assakan, aqqur, amhur, appul, aqṭirib, aṣbat, arṣip -->
+    <feat name="VerbStem" value="Gt" upos="VERB">14</feat><!-- amdahhiṣ, amdahhiṣi, itabbalu, nimdahhiṣi, ītallu, šitapru, šitkunū -->
+    <feat name="VerbStem" value="Gtn" upos="VERB">57</feat><!-- ittallaku, altakkan, attallak, littasqar, ētappašu, attallaku, aštamdih, aštaqqi, iltakkanu, ilteʾʾû -->
+    <feat name="VerbStem" value="N" upos="VERB">57</feat><!-- ipparšidūni, attabalkat, ittaklū, ittabalkat, ibbalkitū, ittikil, ipparšidū, ittabalkutū, i’’abit, likkalmū -->
+    <feat name="VerbStem" value="Ntn" upos="VERB">1</feat><!-- ittatabalkitu -->
+    <feat name="VerbStem" value="S" upos="VERB">285</feat><!-- ušamqit, ušeklil, ušekniša, šūzub, ušezziz, ušēšib, ušaṣbit, ušātir, ušaṣbis, ušatlimū -->
+    <feat name="VerbStem" value="St" upos="VERB">4</feat><!-- uštennû, uštennâ -->
+    <feat name="VerbStem" value="Stn" upos="VERB">3</feat><!-- ultanapšaqā, ussakkil, uštanapšaqū -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="30">
+    <dep name="acl">2</dep>
+    <dep name="acl:relcl">260</dep>
+    <dep name="advcl">49</dep>
+    <dep name="advmod">233</dep>
+    <dep name="advmod:emph">193</dep>
+    <dep name="amod">1036</dep>
+    <dep name="appos">1964</dep>
+    <dep name="case">3022</dep>
+    <dep name="cc">478</dep>
+    <dep name="ccomp">11</dep>
+    <dep name="conj">2773</dep>
+    <dep name="cop">4</dep>
+    <dep name="csubj">1</dep>
+    <dep name="dep">270</dep>
+    <dep name="det">59</dep>
+    <dep name="det:poss">2020</dep>
+    <dep name="discourse">9</dep>
+    <dep name="fixed">21</dep>
+    <dep name="iobj">3</dep>
+    <dep name="mark">35</dep>
+    <dep name="nmod">669</dep>
+    <dep name="nmod:poss">3147</dep>
+    <dep name="nsubj">533</dep>
+    <dep name="nummod">322</dep>
+    <dep name="obj">1908</dep>
+    <dep name="obl">2586</dep>
+    <dep name="parataxis">19</dep>
+    <dep name="root">1907</dep>
+    <dep name="vocative">1</dep>
+    <dep name="xcomp">47</dep>
+  </deps>
+</treebank>

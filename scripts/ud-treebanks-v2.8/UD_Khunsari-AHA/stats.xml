@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>10</sentences><tokens>74</tokens><words>74</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>10</sentences><tokens>74</tokens><words>74</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="55" /><!-- ., تا, دِی, او, اِز, حالا, ش, م, چ, کِر, ؟, ا, اُ, اِزِ, بئون -->
+  <forms unique="59" /><!-- ., تا, دِی, اُ, اِز, م, ؟, آکَ, ئُ, او, اِداجِن, اِزِ, اِطون, اِمِگوا, اِچُ -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="11">
+    <tag name="ADJ">1</tag><!-- چِن -->
+    <tag name="ADP">5</tag><!-- اِز, تا, رِی -->
+    <tag name="ADV">6</tag><!-- حالا, اِزِ, بئون, روز, صُباح -->
+    <tag name="AUX">1</tag><!-- دار -->
+    <tag name="CCONJ">1</tag><!-- و -->
+    <tag name="NOUN">22</tag><!-- اُ, بار, برنج, بِرا, تا, درخت, رخت, ساعت, سال, عبدالله -->
+    <tag name="NUM">5</tag><!-- دِی, یَ, یَک -->
+    <tag name="PRON">8</tag><!-- م, ا, او, ش, مو, مون, مُن -->
+    <tag name="PUNCT">10</tag><!-- ., ؟ -->
+    <tag name="SCONJ">1</tag><!-- وقتی -->
+    <tag name="VERB">14</tag><!-- چ, کِر, او, جیر, داج, دِ, دک, دی, ش, کَ -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="18">
+    <feat name="Case" value="Loc" upos="ADV">1</feat><!-- بئون -->
+    <feat name="Case" value="Tem" upos="ADV">3</feat><!-- اِزِ, اِطون, حالا -->
+    <feat name="Degree" value="Pos" upos="ADJ">1</feat><!-- چند -->
+    <feat name="Mood" value="Imp" upos="VERB">1</feat><!-- دِ -->
+    <feat name="Mood" value="Sub" upos="VERB">1</feat><!-- جیر -->
+    <feat name="Number" value="Plur" upos="NOUN,VERB">2</feat><!-- اِداجِن, پِلا -->
+    <feat name="Number" value="Sing" upos="ADV,AUX,NOUN,PRON,VERB">43</feat><!-- م, آکَ, ئُ, او, اُ, اِمِگوا, اِچُ, اِکِرُ, بار, برنجِن -->
+    <feat name="NumType" value="Card" upos="NUM">5</feat><!-- دِی, یَ, یَک -->
+    <feat name="Person" value="1" upos="AUX,PRON,VERB">13</feat><!-- م, آکَ, اِمِگوا, بشتون, جیر, دارُن, دَرکَفتُن, ما, مُن, مِکِرُن -->
+    <feat name="Person" value="2" upos="VERB">1</feat><!-- دِ -->
+    <feat name="Person" value="3" upos="PRON,VERB">8</feat><!-- ئُ, او, اِداجِن, اِچُ, اِکِرُ, ش, نَچو, کَ -->
+    <feat name="Polarity" value="Neg" upos="VERB">2</feat><!-- ندیُ, نَچو -->
+    <feat name="PronType" value="Dem" upos="PRON">1</feat><!-- مون -->
+    <feat name="PronType" value="Prs" upos="PRON">7</feat><!-- م, او, ش, ما, مُن, نا -->
+    <feat name="Tense" value="Fut" upos="AUX">1</feat><!-- دارُن -->
+    <feat name="Tense" value="Past" upos="VERB">3</feat><!-- آکَ, اِمِگوا, دَرکَفتُن -->
+    <feat name="Tense" value="Pres" upos="VERB">8</feat><!-- ئُ, اِچُ, اِکِرُ, جیر, مِکِرُن, ندیُ, نَچو, کَ -->
+    <feat name="VerbForm" value="Part" upos="VERB">2</feat><!-- اِداجِن, بشتون -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="19">
+    <dep name="advcl">3</dep>
+    <dep name="advmod">3</dep>
+    <dep name="amod">1</dep>
+    <dep name="aux">1</dep>
+    <dep name="case">5</dep>
+    <dep name="cc">1</dep>
+    <dep name="ccomp">4</dep>
+    <dep name="compound">1</dep>
+    <dep name="compound:lvc">3</dep>
+    <dep name="flat">1</dep>
+    <dep name="mark">1</dep>
+    <dep name="nmod">2</dep>
+    <dep name="nmod:poss">6</dep>
+    <dep name="nsubj">8</dep>
+    <dep name="nummod">5</dep>
+    <dep name="obj">4</dep>
+    <dep name="obl">5</dep>
+    <dep name="punct">10</dep>
+    <dep name="root">10</dep>
+  </deps>
+</treebank>

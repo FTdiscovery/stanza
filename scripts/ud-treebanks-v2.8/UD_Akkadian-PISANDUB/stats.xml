@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>101</sentences><tokens>1852</tokens><words>1852</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>101</sentences><tokens>1852</tokens><words>1852</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="510" /><!-- ša, u, -šu, ana, šarru, ina, -ia, Babili, -ma, Marduk, -šunu, bēlu, rabû, libbu, mātu -->
+  <forms unique="900" /><!-- ù, LUGAL, a-na, ša, i-na, -ma, -šu, d-AMAR-UTU, šá, -šú, EN, la, -ia, DUMU, d-AG -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="13">
+    <tag name="ADJ">101</tag><!-- rabû, kīnu, rēštû, ṣīru, dannu, elû, labīru, rapšu, šaplû, ašarēdu -->
+    <tag name="ADP">176</tag><!-- ana, ina, ša, ištu, adi, itti, kīma, eli, kī, -anni- -->
+    <tag name="ADV">32</tag><!-- ūmišam, eššiš, kīdānu, hadîš, ṭābiš, damqiš, ezziš, inūma, inūmīšu, inūšu -->
+    <tag name="CCONJ">101</tag><!-- u, -ma, lū -->
+    <tag name="DET">10</tag><!-- ša, _ -->
+    <tag name="NOUN">695</tag><!-- šarru, bēlu, libbu, mātu, māru, ilu, dūru, nišu, ūmu, qerbu -->
+    <tag name="NUM">12</tag><!-- _, 1, 1/2, 1/3, 2, 3, 6, erbe -->
+    <tag name="PART">34</tag><!-- lā, lū, -ma, ai, ul -->
+    <tag name="PRON">186</tag><!-- -šu, -ia, -šunu, -ka, anāku, -šina, -ša, šu, šuāti, -ma -->
+    <tag name="PROPN">246</tag><!-- Babili, Marduk, Nabu, Esagil, Ezida, Nabu-apla-uṣur, Kuraš, Amel-Marduk, Anšan, Šuanna -->
+    <tag name="SCONJ">36</tag><!-- ša, inu, inūma, manāma, -ša, šumma -->
+    <tag name="VERB">193</tag><!-- epēšu, šakānu, erēbu, qabû, sahāru, šeʾû, kânu, alāku, barû, nadû -->
+    <tag name="X">30</tag><!-- _ -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="0">
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="27">
+    <dep name="acl">9</dep>
+    <dep name="advcl">8</dep>
+    <dep name="advmod">63</dep>
+    <dep name="amod">99</dep>
+    <dep name="appos">139</dep>
+    <dep name="case">174</dep>
+    <dep name="cc">102</dep>
+    <dep name="ccomp">15</dep>
+    <dep name="compound">7</dep>
+    <dep name="conj">134</dep>
+    <dep name="csubj">15</dep>
+    <dep name="dep">38</dep>
+    <dep name="det">182</dep>
+    <dep name="fixed">1</dep>
+    <dep name="flat">9</dep>
+    <dep name="iobj">12</dep>
+    <dep name="list">28</dep>
+    <dep name="mark">36</dep>
+    <dep name="nmod">328</dep>
+    <dep name="nsubj">33</dep>
+    <dep name="nummod">8</dep>
+    <dep name="obj">128</dep>
+    <dep name="obl">125</dep>
+    <dep name="parataxis">35</dep>
+    <dep name="root">101</dep>
+    <dep name="vocative">9</dep>
+    <dep name="xcomp">14</dep>
+  </deps>
+</treebank>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>3642</sentences><tokens>70047</tokens><words>70047</words><fused>0</fused></total>
+    <train><sentences>2341</sentences><tokens>47641</tokens><words>47641</words><fused>0</fused></train>
+    <dev><sentences>617</sentences><tokens>11560</tokens><words>11560</words><fused>0</fused></dev>
+    <test><sentences>684</sentences><tokens>10846</tokens><words>10846</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="8647" /><!-- ,, ., ir, būti, jis, kad, „, ), “, –, tas, kuris, į, Lietuva, ( -->
+  <forms unique="17899" /><!-- ,, ., ir, kad, „, ), “, –, į, (, yra, ar, su, -, iš -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="17">
+    <tag name="ADJ">4651</tag><!-- naujas, socialinis, svarbus, viešas, geras, įvairus, bendras, pagrindinis, mokslinis, finansinis -->
+    <tag name="ADP">2331</tag><!-- į, su, iš, apie, dėl, nuo, per, iki, už, prie -->
+    <tag name="ADV">2828</tag><!-- labai, daug, taip, todėl, iš, gerai, jau, dabar, dažnai, mažai -->
+    <tag name="AUX">684</tag><!-- būti -->
+    <tag name="CCONJ">3081</tag><!-- ir, ar, o, bei, bet, tačiau, arba, vis, kadangi, kuo -->
+    <tag name="DET">1780</tag><!-- tas, kuris, šis, visas, toks, pats, koks, kiekvienas, joks, šitas -->
+    <tag name="INTJ">19</tag><!-- deja, na, labas, a, aha, ak, ačiū, laba, o, po -->
+    <tag name="NOUN">21277</tag><!-- duomenys, valstybė, kultūra, tyrimas, įmonė, paslauga, darbas, asmuo, paštas, m. -->
+    <tag name="NUM">1699</tag><!-- 1, 2, 3, pirmas, 2006, du, 4, 5, vienas, antras -->
+    <tag name="PART">1553</tag><!-- ir, ne, tik, taip, net, dar, gal, jau, tai, ar -->
+    <tag name="PRON">2419</tag><!-- jis, aš, kitas, savęs, kas, tu, vienas, niekas, kai, tam -->
+    <tag name="PROPN">1593</tag><!-- Lietuva, Europa, Vilnius, Kaunas, Šengenas, Kalėdos, Marcinkevičienė, Glaveckas, Mažuolis, Rusija -->
+    <tag name="PUNCT">12896</tag><!-- ,, ., „, ), “, –, (, -, :, ; -->
+    <tag name="SCONJ">1423</tag><!-- kad, kaip, nes, kai, jei, jeigu, jog, nei, nors, ar -->
+    <tag name="SYM">62</tag><!-- %, P, N, A, B, DPn, DSn, kn, ĮV-459, &amp; -->
+    <tag name="VERB">10180</tag><!-- galėti, turėti, būti, nustatyti, nebūti, pateikti, skirti, siekti, teikti, reikėti -->
+    <tag name="X">1571</tag><!-- pat, ES, d., proc., nr., kuris, tikras, nors, p., to -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="62">
+    <feat name="Abbr" value="Yes" upos="NOUN,X">1012</feat><!-- m, ES, d, proc, Nr, p, a, tūkst, R, mln -->
+    <feat name="AdpType" value="Prep" upos="ADP">2331</feat><!-- į, su, iš, apie, dėl, nuo, per, iki, už, prie -->
+    <feat name="Aspect" value="Hab" upos="AUX,VERB">75</feat><!-- būdavo, sakydavo, girdavo, kirpdavo, klausdavo, Nematydavau, apnerdavo, atrodydavo, atsitikdavo, dirbdavo -->
+    <feat name="Aspect" value="Perf" upos="AUX,VERB">1860</feat><!-- buvo, nebuvo, sakė, liko, likus, susiję, turėjo, išskyrus, teigė, atsirado -->
+    <feat name="Case" value="Acc" upos="ADJ,ADP,DET,NOUN,NUM,PRON,PROPN,VERB">6589</feat><!-- į, apie, per, už, pagal, ką, juos, jį, prieš, sąlygas -->
+    <feat name="Case" value="Dat" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">1598</feat><!-- man, jam, pavyzdžiui, jiems, mums, inovacijoms, tarnybai, jai, jums, subjektams -->
+    <feat name="Case" value="Gen" upos="ADJ,ADP,DET,NOUN,NUM,PRON,PROPN,VERB,X">14889</feat><!-- Lietuvos, iš, duomenų, dėl, savo, jų, nuo, pašto, kultūros, valstybės -->
+    <feat name="Case" value="Ill" upos="NOUN">9</feat><!-- Ganyklon, akiratin, ežeran, kieman, kirpyklon, klasėn, nuosavybėn, supirktuvėn, žemėn -->
+    <feat name="Case" value="Ins" upos="ADJ,ADP,DET,NOUN,NUM,PRON,PROPN,VERB">2489</feat><!-- su, metu, metais, tvarka, šiuo, duomenimis, nustatyta, tuo, atžvilgiu, atveju -->
+    <feat name="Case" value="Loc" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">1725</feat><!-- Lietuvoje, straipsnyje, namuose, srityje, šiame, knygoje, dalyje, užsienyje, kurioje, pasaulyje -->
+    <feat name="Case" value="Nom" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">9298</feat><!-- jis, jie, kas, aš, kurie, ji, kuris, dalis, vienas, žmonės -->
+    <feat name="Case" value="Voc" upos="ADJ,NOUN,PRON,VERB">19</feat><!-- ponia, Viešpatie, Tėvyne, broli, broliuk, godotinas, miels, nekentėjai, pašaipūnai, rūkštele -->
+    <feat name="Definite" value="Def" upos="ADJ,DET,NUM,PRON,VERB,X">564</feat><!-- smulkiojo, viešosios, viešojo, viešųjų, pastaraisiais, pirmoji, tiriamojo, antroji, grįžtamosios, viešojoje -->
+    <feat name="Definite" value="Ind" upos="ADJ,AUX,DET,NUM,PRON,VERB">13056</feat><!-- tai, savo, jų, jis, jos, jie, 1, jo, 2, kas -->
+    <feat name="Degree" value="Cmp" upos="ADJ,ADV">530</feat><!-- daugiau, toliau, geriau, mažiau, labiau, dažniau, vėliau, anksčiau, lengviau, ankstesnių -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV,X">6741</feat><!-- labai, taip, todėl, iš, jau, dabar, tiek, daug, kur, kiek -->
+    <feat name="Degree" value="Sup" upos="ADJ,ADV,VERB">204</feat><!-- dažniausiai, labiausiai, daugiausia, pirmiausia, svarbiausias, svarbiausia, svarbiausių, greičiausiai, svarbiausius, Tikriausiai -->
+    <feat name="Foreign" value="Yes" upos="X">130</feat><!-- Levin, Baltic, Via, Cilley, Inter, Baltica, Digital, Europe, Gilgun, Kosmos -->
+    <feat name="Gender" value="Com" upos="NOUN">8</feat><!-- kūdikis, giminės, kiaulė, nauda, pabaisai, valkatos -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB,X">14393</feat><!-- Lietuvos, kultūros, valstybės, jos, Europos, paslaugos, įmonės, apsaugos, politikos, Lietuvoje -->
+    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB,X">19168</feat><!-- duomenų, pašto, jų, jis, jie, darbo, asmens, jo, verslo, metų -->
+    <feat name="Gender" value="Neut" upos="ADJ,AUX,DET,NUM,PRON,VERB">857</feat><!-- tai, galima, būtina, svarbu, visa, siekiama, planuota, sunku, žinoma, neįmanoma -->
+    <feat name="Hyph" value="Yes" upos="ADP,ADV,CCONJ,DET,INTJ,NUM,PART,PRON,SCONJ,VERB,X">1160</feat><!-- pat, taip, iš, kai, tam, to, nors, vis, be, kas -->
+    <feat name="Mood" value="Cnd" upos="AUX,VERB">376</feat><!-- būtų, turėtų, reikėtų, galėtų, nebūtų, nereikėtų, atrodytų, manytume, norėtų, padėtų -->
+    <feat name="Mood" value="Imp" upos="AUX,VERB">179</feat><!-- atminkite, pasistenkite, stenkitės, pagalvokite, būkite, nesistenkite, paprašykite, raskite, užsirašykite, Duokit -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">4275</feat><!-- yra, buvo, gali, turi, nėra, bus, reikia, nebuvo, rodo, sakė -->
+    <feat name="Mood" value="Nec" upos="VERB">26</feat><!-- DARYTINOS, Pabrėžtina, Paminėtina, būtina, ginčytinas, ginčytini, godotinas, laikytinas, lankytinų, neatleistinas -->
+    <feat name="Number" value="Dual" upos="PRON">11</feat><!-- abi, mudu, mudviejų, Jiedu, abiejų, abiem -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB,X">14078</feat><!-- duomenų, jų, yra, jie, metų, tyrimų, kurie, buvo, kitų, juos -->
+    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB,X">24046</feat><!-- Lietuvos, yra, pašto, kultūros, valstybės, jis, Europos, apsaugos, paslaugos, darbo -->
+    <feat name="NumForm" value="Combi" upos="NUM">26</feat><!-- 15-oji, 11-osios, 50 - 1829, (36-11.8)-1385, 10 . 6, 10 . 7, 11:49, 12-ojo, 12-ąjį, 1257/1999 -->
+    <feat name="NumForm" value="Digit" upos="NUM">1283</feat><!-- 1, 2, 3, 2006, 4, 5, 6, 25, 7, 10 -->
+    <feat name="NumForm" value="Roman" upos="NUM">42</feat><!-- I, XX, II, III, IV, V, XIX, XXI, XVIII, VI -->
+    <feat name="NumForm" value="Word" upos="NUM">337</feat><!-- du, vieną, trijų, dvi, milijonų, dviejų, pirmą, tūkstančių, pirmoji, tris -->
+    <feat name="NumType" value="Card" upos="NUM">205</feat><!-- du, vieną, dvi, trijų, milijonų, dviejų, tūkstančių, tris, abu, dviem -->
+    <feat name="NumType" value="Mult" upos="NUM">13</feat><!-- trejus, dvejus, penkerius, abejos, aštuonerius, penkeri, trejų, vieneriems -->
+    <feat name="NumType" value="Ord" upos="NUM">129</feat><!-- pirmoji, pirmą, antra, antroji, pirmas, 15-oji, Antrame, antroje, antrojo, antrąjį -->
+    <feat name="NumType" value="Sets" upos="NUM">3</feat><!-- trejetą -->
+    <feat name="Person" value="1" upos="AUX,PRON,VERB">858</feat><!-- aš, mano, man, mūsų, mes, mane, mums, mus, esu, galime -->
+    <feat name="Person" value="2" upos="AUX,PRON,VERB">626</feat><!-- tu, jūsų, tavo, galite, jums, esi, turite, tave, jus, jūs -->
+    <feat name="Person" value="3" upos="AUX,PRON,VERB">4712</feat><!-- yra, buvo, jų, gali, jis, jos, jie, turi, jo, būtų -->
+    <feat name="Polarity" value="Neg" upos="VERB">849</feat><!-- nėra, nebuvo, negali, nepaisant, nebus, neturi, nereikia, nebūtų, neviršija, neįmanoma -->
+    <feat name="Polarity" value="Pos" upos="ADV,AUX,VERB">10016</feat><!-- yra, buvo, gali, būti, turi, būtų, galima, bus, reikia, nustatyta -->
+    <feat name="PronType" value="Dem" upos="DET">973</feat><!-- tai, to, šio, šios, toks, šį, ši, šiame, šių, tą -->
+    <feat name="PronType" value="Emp" upos="DET">84</feat><!-- pats, pačių, pati, paties, patys, pačios, pačiam, pačius, patiems, patį -->
+    <feat name="PronType" value="Ind" upos="PRON">650</feat><!-- kitų, kai, tam, vienas, kiti, kitas, viena, kitus, kitą, vieną -->
+    <feat name="PronType" value="Int,Rel" upos="ADV,DET,PRON">719</feat><!-- kas, ką, kurie, kurios, kur, kuris, kurių, kaip, kuri, kurio -->
+    <feat name="PronType" value="Neg" upos="DET,PRON">72</feat><!-- nieko, niekas, jokių, jokio, jokios, niekuo, joks, jokiais, jokį, niekieno -->
+    <feat name="PronType" value="Prs" upos="PRON">1567</feat><!-- jų, savo, jis, jos, jie, jo, aš, juos, mano, man -->
+    <feat name="PronType" value="Tot" upos="DET">235</feat><!-- visą, visų, visus, visi, visoje, visos, visas, visiems, kiekvienas, kiekvieną -->
+    <feat name="PunctType" value="Peri" upos="PUNCT">5</feat><!-- . -->
+    <feat name="Reflex" value="Yes" upos="NOUN,PRON,VERB">1533</feat><!-- savo, remiantis, save, sau, laikymosi, vadinasi, atsirado, elgtis, keičiasi, laikytis -->
+    <feat name="Tense" value="Fut" upos="AUX,VERB">407</feat><!-- bus, nebus, reikės, turės, būsi, liks, nereikės, padės, teks, tiks -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">3063</feat><!-- buvo, nustatyta, nebuvo, sakė, skirta, liko, likus, nurodyto, planuota, nustatytas -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">4550</feat><!-- yra, gali, turi, galima, nėra, reikia, siekiant, rodo, privalo, tampa -->
+    <feat name="VerbForm" value="Conv" upos="ADV,AUX,VERB">207</feat><!-- įgyvendindama, dirbdamas, siekdama, atsakydamas, remdamasi, žvelgdama, atlikdami, būdami, ieškodamas, laikydamasis -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">4832</feat><!-- yra, buvo, gali, turi, būtų, nėra, bus, reikia, nebuvo, rodo -->
+    <feat name="VerbForm" value="Ger" upos="AUX,VERB">496</feat><!-- siekiant, taikant, likus, remiantis, nepaisant, naudojant, įgyvendinant, išskyrus, teikiant, norint -->
+    <feat name="VerbForm" value="Inf" upos="AUX,VERB">2053</feat><!-- būti, teikti, pateikti, užtikrinti, sukurti, dirbti, kurti, skatinti, įgyvendinti, padaryti -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">3275</feat><!-- galima, nustatyta, pateikiama, skirta, siekiama, nurodyto, planuota, aptariami, nustatytas, susiję -->
+    <feat name="Voice" value="Act" upos="AUX,VERB">1013</feat><!-- susiję, žyminčių, susijusios, susijusių, susijusi, susijęs, turinčių, esąs, įsitikinęs, dirbančių -->
+    <feat name="Voice" value="Pass" upos="VERB">2237</feat><!-- galima, nustatyta, pateikiama, skirta, siekiama, nurodyto, planuota, aptariami, nustatytas, žinoma -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="35">
+    <dep name="acl">1908</dep>
+    <dep name="acl:relcl">354</dep>
+    <dep name="advcl">1329</dep>
+    <dep name="advmod">2610</dep>
+    <dep name="advmod:emph">1449</dep>
+    <dep name="amod">3795</dep>
+    <dep name="appos">194</dep>
+    <dep name="case">2306</dep>
+    <dep name="cc">3049</dep>
+    <dep name="ccomp">463</dep>
+    <dep name="compound">2</dep>
+    <dep name="conj">5070</dep>
+    <dep name="cop">684</dep>
+    <dep name="csubj">461</dep>
+    <dep name="csubj:pass">6</dep>
+    <dep name="dep">103</dep>
+    <dep name="det">988</dep>
+    <dep name="discourse">5</dep>
+    <dep name="flat">350</dep>
+    <dep name="flat:foreign">31</dep>
+    <dep name="iobj">28</dep>
+    <dep name="mark">1474</dep>
+    <dep name="nmod">9770</dep>
+    <dep name="nsubj">3433</dep>
+    <dep name="nsubj:pass">473</dep>
+    <dep name="nummod">1226</dep>
+    <dep name="nummod:gov">51</dep>
+    <dep name="obj">2505</dep>
+    <dep name="obl">2795</dep>
+    <dep name="obl:arg">4800</dep>
+    <dep name="orphan">7</dep>
+    <dep name="parataxis">606</dep>
+    <dep name="punct">12896</dep>
+    <dep name="root">3642</dep>
+    <dep name="xcomp">1184</dep>
+  </deps>
+</treebank>

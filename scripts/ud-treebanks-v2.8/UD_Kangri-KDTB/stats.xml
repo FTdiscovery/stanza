@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>288</sentences><tokens>2514</tokens><words>2514</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>288</sentences><tokens>2514</tokens><words>2514</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="0" /><!--  -->
+  <forms unique="1050" /><!-- ।, है, विच, दा, जो, हन, दी, नी, दे, सैह, ते, ही, ?, तुसां, भी -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="15">
+    <tag name="ADJ">130</tag><!-- _ -->
+    <tag name="ADP">315</tag><!-- _ -->
+    <tag name="ADV">92</tag><!-- _ -->
+    <tag name="AUX">305</tag><!-- _ -->
+    <tag name="CCONJ">28</tag><!-- _ -->
+    <tag name="DET">49</tag><!-- _ -->
+    <tag name="INTJ">3</tag><!-- _ -->
+    <tag name="NOUN">553</tag><!-- _ -->
+    <tag name="NUM">41</tag><!-- _ -->
+    <tag name="PART">95</tag><!-- _ -->
+    <tag name="PRON">208</tag><!-- _ -->
+    <tag name="PROPN">89</tag><!-- _ -->
+    <tag name="PUNCT">310</tag><!-- _ -->
+    <tag name="SCONJ">11</tag><!-- _ -->
+    <tag name="VERB">285</tag><!-- _ -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="0">
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="24">
+    <dep name="advcl">39</dep>
+    <dep name="advmod">88</dep>
+    <dep name="amod">94</dep>
+    <dep name="aux">173</dep>
+    <dep name="aux:pass">52</dep>
+    <dep name="case">300</dep>
+    <dep name="cc">24</dep>
+    <dep name="ccomp">3</dep>
+    <dep name="compound">159</dep>
+    <dep name="conj">23</dep>
+    <dep name="cop">66</dep>
+    <dep name="dep">93</dep>
+    <dep name="det">46</dep>
+    <dep name="discourse">3</dep>
+    <dep name="iobj">9</dep>
+    <dep name="mark">30</dep>
+    <dep name="nmod">212</dep>
+    <dep name="nsubj">224</dep>
+    <dep name="nummod">31</dep>
+    <dep name="obj">86</dep>
+    <dep name="obl">157</dep>
+    <dep name="punct">310</dep>
+    <dep name="root">288</dep>
+    <dep name="xcomp">4</dep>
+  </deps>
+</treebank>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>8</sentences><tokens>55</tokens><words>55</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>8</sentences><tokens>55</tokens><words>55</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="38" /><!-- ., مِن, دِ, ش, الُن, بِ, تا, ئی, اَ, اَجی, اُن, اُوِ, اِ, اپوش, بار -->
+  <forms unique="40" /><!-- ., دِ, الُن, بِ, تا, مِن, ِم, ئی, اشی, اَ, اَجی, اَپوشُن, اَکَرَ, اُن, اُوِ -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="8">
+    <tag name="ADP">6</tag><!-- بِ, تا, اَ, اِ -->
+    <tag name="ADV">4</tag><!-- الُن, رو, هزِ -->
+    <tag name="AUX">1</tag><!-- دار -->
+    <tag name="NOUN">16</tag><!-- اُوِ, بار, برنج, بِرا, سات, سال, صب, عبدولو, علی, لباس -->
+    <tag name="NUM">5</tag><!-- دِ, ئی, اَجی -->
+    <tag name="PRON">6</tag><!-- مِن, اُن, م -->
+    <tag name="PUNCT">8</tag><!-- . -->
+    <tag name="VERB">9</tag><!-- ش, اپوش, د, نُن, واج, کَر, گِت -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="15">
+    <feat name="Case" value="Tem" upos="ADV">3</feat><!-- الُن, هِزِ -->
+    <feat name="Mood" value="Imp" upos="VERB">1</feat><!-- دِ -->
+    <feat name="Number" value="Plur" upos="VERB">1</feat><!-- واجَن -->
+    <feat name="Number" value="Sing" upos="ADV,AUX,NOUN,PRON,VERB">32</feat><!-- مِن, ِم, اشی, اَپوشُن, اَکَرَ, اُن, اُوِ, بار, برنج, بَشتُن -->
+    <feat name="NumType" value="Card" upos="NUM">5</feat><!-- دِ, ئی, اَجی -->
+    <feat name="Person" value="1" upos="AUX,PRON,VERB">9</feat><!-- ِم, اَپوشُن, بَشتُن, دارُن, م, مِن, نَدییَ, هاگِت -->
+    <feat name="Person" value="2" upos="VERB">1</feat><!-- دِ -->
+    <feat name="Person" value="3" upos="PRON,VERB">5</feat><!-- اشی, اَکَرَ, اُن, ناشی, واجَن -->
+    <feat name="Polarity" value="Neg" upos="VERB">2</feat><!-- ناشی, نَدییَ -->
+    <feat name="PronType" value="Dem" upos="PRON">1</feat><!-- مِن -->
+    <feat name="PronType" value="Prs" upos="PRON">5</feat><!-- ِم, اُن, م, مِن -->
+    <feat name="Tense" value="Fut" upos="AUX">1</feat><!-- دارُن -->
+    <feat name="Tense" value="Past" upos="VERB">1</feat><!-- هاگِت -->
+    <feat name="Tense" value="Pres" upos="VERB">5</feat><!-- اشی, اَپوشُن, اَکَرَ, ناشی, نَدییَ -->
+    <feat name="VerbForm" value="Part" upos="VERB">2</feat><!-- بَشتُن, واجَن -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="15">
+    <dep name="advcl">2</dep>
+    <dep name="advmod">2</dep>
+    <dep name="aux">1</dep>
+    <dep name="case">6</dep>
+    <dep name="ccomp">1</dep>
+    <dep name="compound:lvc">1</dep>
+    <dep name="flat">1</dep>
+    <dep name="nmod">2</dep>
+    <dep name="nmod:poss">4</dep>
+    <dep name="nsubj">6</dep>
+    <dep name="nummod">5</dep>
+    <dep name="obj">4</dep>
+    <dep name="obl">4</dep>
+    <dep name="punct">8</dep>
+    <dep name="root">8</dep>
+  </deps>
+</treebank>

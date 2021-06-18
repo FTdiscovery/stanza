@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>19749</sentences><tokens>92156</tokens><words>92156</words><fused>0</fused></total>
+    <train><sentences>15375</sentences><tokens>71466</tokens><words>71466</words><fused>0</fused></train>
+    <dev><sentences>2181</sentences><tokens>10501</tokens><words>10501</words><fused>0</fused></dev>
+    <test><sentences>2193</sentences><tokens>10189</tokens><words>10189</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="2216" /><!-- ., çok, iyi, güzel, bir, ol, personel, memnun, değil, tesis, ve, kal, yemek, otel, hizmet -->
+  <forms unique="5127" /><!-- ., ÇOK, BİR, GÜZELDİ, İYİYDİ, İYİ, MEMNUN, VE, DEĞİLDİ, GÜZEL, OLARAK, HİZMET, BEY, TEMİZ, İLE -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="15">
+    <tag name="ADJ">10182</tag><!-- iyi, memnun, güzel, temiz, genel, ilgili, uygun, fazla, çocuklu, ver -->
+    <tag name="ADP">1382</tag><!-- için, göre, dolayı, gibi, ile, kadar, rağmen, yönelik, diye, üzere -->
+    <tag name="ADV">7340</tag><!-- çok, ol, daha, biraz, gayet, hiç, sadece, özellikle, pek, kesinlikle -->
+    <tag name="AUX">1310</tag><!-- değil, mi -->
+    <tag name="CCONJ">2192</tag><!-- ve, ile, ama, da, de, fakat, hatta, veya, çünkü, ancak -->
+    <tag name="DET">2947</tag><!-- bir, her, bu, o, şu, hiçbir, tüm, bazı, çok, dörtlük -->
+    <tag name="INTJ">19</tag><!-- tabi, eh, inşallah, sakın, e, hop -->
+    <tag name="NOUN">26036</tag><!-- personel, yemek, hizmet, otel, tesis, oda, konum, bey, deniz, çeşit -->
+    <tag name="NUM">797</tag><!-- 5, 10, 3, 6, 1, 4, 100, 2, bir, beş -->
+    <tag name="PRON">944</tag><!-- ben, biz, kendi, hepsi, herkes, o, siz, bu, biri, kimse -->
+    <tag name="PROPN">1925</tag><!-- ets, mehmet, etstur, emre, fatih, ali, tolga, deniz, hakan, mustafa -->
+    <tag name="PUNCT">20092</tag><!-- ., , -->
+    <tag name="SCONJ">39</tag><!-- ki, eğer -->
+    <tag name="VERB">16939</tag><!-- güzel, iyi, kal, et, ol, görüş, ver, ilgilen, yok, tesis -->
+    <tag name="X">12</tag><!-- tefek, derli -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="51">
+    <feat name="Aspect" value="Hab" upos="VERB">1225</feat><!-- EDERİM, VERİRİM, ETMEM, EDERİZ, DEĞERLENDİRİRİM, BAHSEDERİM, OLABİLİR, OLURSA, VEREBİLİRİM, İSTERİM -->
+    <feat name="Aspect" value="Perf" upos="AUX,VERB">15149</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, GÖRÜŞÜLDÜ, YOKTU, KALDIK, TESİSTİ, KALDIM, İLGİLİYDİ, İLGİLENDİ -->
+    <feat name="Aspect" value="Prog" upos="VERB">1183</feat><!-- VERİYORUM, İSTEMİYORUM, İSTİYORUM, EDİYORUM, EDİYORUZ, BİLMİYORUM, DÜŞÜNMÜYOR, DÜŞÜNÜYORUM, ETMİYORUM, HAKETMİYOR -->
+    <feat name="Case" value="Abl" upos="NOUN,PROPN">1440</feat><!-- TESİSTEN, OTELDEN, AÇISINDAN, YEMEKLERİNDEN, ŞEYDEN, YEMEKLERDEN, HİZMETTEN, ÜZERİNDEN, HİZMETİNDEN, PERSONELLERDEN -->
+    <feat name="Case" value="Acc" upos="NOUN,PROPN">1914</feat><!-- KONUMU, DENİZİ, KARŞILIĞINI, YEMEKLERİ, HAVUZU, TEMİZLİĞİ, PERSONELLERİ, HİZMETİ, ÜCRETİ, PERSONELİ -->
+    <feat name="Case" value="Dat" upos="NOUN,PROPN">1718</feat><!-- ÜCRETE, FİYATA, DENİZE, AİLELERE, FİYATINA, MERKEZE, ADINA, ANKETE, BEYE, PARAYA -->
+    <feat name="Case" value="Gen" upos="NOUN,PROPN">960</feat><!-- OTELİN, TESİSİN, PERSONELLERİN, PERSONELİN, ÜCRETİN, YEMEKLERİN, PARANIN, ODANIN, ÇALIŞANLARIN, ODALARIN -->
+    <feat name="Case" value="Ins" upos="NOUN,PROPN">395</feat><!-- BEYLE, TELEFONLA, HANIMLA, YÖNÜYLE, KELİMEYLE, DOĞAYLA, ŞEYİYLE, ANLAMIYLA, ÜCRETLE, ARKADAŞIMLA -->
+    <feat name="Case" value="Loc" upos="NOUN,PROPN">848</feat><!-- GİRİŞTE, GENELDE, OTELDE, ANLAMDA, YEMEKLERDE, ANDA, KONUSUNDA, ODADA, DIŞINDA, ÇIKIŞTA -->
+    <feat name="Case" value="Nom" upos="AUX,NOUN,PROPN">20702</feat><!-- HİZMET, BEY, PUAN, ÇEŞİT, TAVSİYE, TESİS, PERSONEL, OTEL, YEMEKLER, KONUMU -->
+    <feat name="Definite" value="Def" upos="DET">905</feat><!-- HER, BU, O, ŞU, HEP, SU, BİR -->
+    <feat name="Definite" value="Ind" upos="DET">1953</feat><!-- BİR, BAZI, HİÇBİR -->
+    <feat name="Degree" value="Cmp" upos="ADV">435</feat><!-- DAHA -->
+    <feat name="Degree" value="Sup" upos="ADV">79</feat><!-- EN -->
+    <feat name="Mood" value="Cnd" upos="VERB">93</feat><!-- OLURSA, VARSA, İSTİYORSANIZ, YENİLENİRSE, YAPTIYSA, İSTERSENİZ, DÜZELİRSE, DÜŞÜNÜRSE, GELİRSE, OLUNURSA -->
+    <feat name="Mood" value="Des" upos="VERB">34</feat><!-- OLSA, BİTSE, KURTULSAK, OLMASA, VARSA, KALKSAM, OLMASAM, OLSAK, OLSAYDI, İSE -->
+    <feat name="Mood" value="Imp" upos="VERB">170</feat><!-- OLSUN, ARAMAYIN, GELSİN, OLSUNLAR, ALINIZ, GİDİN, SAĞOLUN, VAR, ANIL, CHECK -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">16210</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, GÖRÜŞÜLDÜ, YOKTU, KALDIK, TESİSTİ, KALDIM, İLGİLİYDİ, İLGİLENDİ -->
+    <feat name="Mood" value="Nec" upos="VERB">49</feat><!-- GİTMELİ, OLMALIYDI, ETMELİ, GİTMEMELİ, OLMALI, ÖDÜLLENDİRİLMELİ, YAPMALI, YAŞANMALI, ARAMALIYDI, EDİLMELİ -->
+    <feat name="Mood" value="Opt" upos="VERB">13</feat><!-- VERMEYEYİM, DÖNE, GECE, SIRITA, BELİRTEYİM, GELELİM, GÖNDERELİM, GÖRÜŞELİM -->
+    <feat name="Number" value="Plur" upos="AUX,NOUN,PROPN,VERB">6175</feat><!-- KALDIK, YEMEKLER, YEMEKLERİ, PERSONELLER, PERSONELLERİ, AİLELER, ODALAR, OLANAKLARI, İLGİLENDİLER, İMKANLARI -->
+    <feat name="Number" value="Sing" upos="AUX,NOUN,PROPN,VERB">39915</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, HİZMET, BEY, GÖRÜŞÜLDÜ, PUAN, KONUMU, ÇEŞİT, TAVSİYE -->
+    <feat name="Number[psor]" value="Plur" upos="NOUN,VERB">822</feat><!-- MİSAFİRİMİZ, ODAMIZ, YEMEKLERİNDEN, REHBERİMİZ, PERSONELLERİNDEN, TADIMIZA, PLANIMIZ, YEMEKLERİNİ, PERSONELLERİ, ACENTAMIZA -->
+    <feat name="Number[psor]" value="Sing" upos="AUX,NOUN,VERB">6179</feat><!-- KONUMU, KALİTESİ, YEMEKLERİ, PERSONELLERİ, DENİZİ, TEMİZLİĞİ, HAVUZU, OLMASI, KARŞILIĞINI, HİZMETİ -->
+    <feat name="NumType" value="Card" upos="ADJ,NUM">745</feat><!-- 5, 10, 3, 6, 1, 100, BİR, BEŞ, 2, 4 -->
+    <feat name="NumType" value="Ord" upos="NUM">56</feat><!-- 3., 05., 18., 4., 2., 22., İKİNCİ, 201622., 5., 2630. -->
+    <feat name="Person" value="1" upos="AUX,VERB">5100</feat><!-- KALDIK, KALDIM, EDERİM, VERİYORUM, KALMADIM, İSTEMİYORUM, İSTİYORUM, VERİRİM, ETMEM, BEĞENDİM -->
+    <feat name="Person" value="2" upos="VERB">165</feat><!-- ARAMAYIN, ALINIZ, GİDİN, SAĞOLUN, VAR, İSTİYORSANIZ, ANIL, CHECK, DEN, İLETİN -->
+    <feat name="Person" value="3" upos="AUX,NOUN,VERB">38900</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, HİZMET, BEY, GÖRÜŞÜLDÜ, PUAN, KONUMU, ÇEŞİT, TAVSİYE -->
+    <feat name="Person[psor]" value="1" upos="AUX,NOUN,VERB">1202</feat><!-- FATURAM, MİSAFİRİMİZ, ODAMIZ, EŞİM, REHBERİMİZ, ODAM, ARKADAŞIM, TADIMIZA, HOŞUMA, DEĞİLİM -->
+    <feat name="Person[psor]" value="2" upos="NOUN,VERB">177</feat><!-- ÜZERİNDEN, YURTDIŞINDA, ÜZERİNDEYDİ, KARŞIN, OTELİNİZDEN, TURAN, AN, KUSURUNUZ, OTELİNİZİ, PARANIZIN -->
+    <feat name="Person[psor]" value="3" upos="NOUN,VERB">5622</feat><!-- KONUMU, KALİTESİ, YEMEKLERİ, PERSONELLERİ, DENİZİ, TEMİZLİĞİ, HAVUZU, OLMASI, KARŞILIĞINI, HİZMETİ -->
+    <feat name="Polarity" value="Neg" upos="VERB">2205</feat><!-- KALMADIM, İSTEMİYORUM, ETMEM, OLMADI, BEĞENMEDİM, KULLANMADIM, ALAMADIM, YAPTIRMADIM, GÖRMEDİM, KARŞILAMADI -->
+    <feat name="Polarity" value="Pos" upos="VERB">6221</feat><!-- GÖRÜŞÜLDÜ, KALDIK, KALDIM, EDERİM, İLGİLENDİ, VERİYORUM, İSTİYORUM, VERİRİM, OLABİLİRDİ, VARDI -->
+    <feat name="PronType" value="Dem" upos="PRON">54</feat><!-- ONLAR, O, BU, BUNDAN, BUNA, BUNUN, BUNLAR, BUNU, ONDAN, ONLARA -->
+    <feat name="PronType" value="Int" upos="ADV,AUX,NOUN,PRON">46</feat><!-- NE, NASIL, KİM, Mİ, MİYİM, HANGİ, KİMİN, MU, MİYDİ -->
+    <feat name="PronType" value="Prs" upos="PRON">599</feat><!-- BEN, BİZİMLE, BENCE, BANA, BİZE, BİZİ, BENİ, BİZ, BENİM, SİZE -->
+    <feat name="PronType" value="Rcp" upos="PRON">1</feat><!-- BİRBİRİNE -->
+    <feat name="Reflex" value="Yes" upos="PRON">99</feat><!-- KENDİSİ, KENDİSİNE, KENDİMİZ, KENDİSİNİ, KENDİSİYLE, KENDİ, KENDİLERİ, KENDİSİNDEN, KENDİM, KENDİMİZİ -->
+    <feat name="Tense" value="Fut" upos="VERB">177</feat><!-- GELECEK, DOLDURACAĞIM, EDECEĞİM, KATILAMAYACAĞIM, VEREMEYECEĞİM, YAPACAK, YAPACAĞIM, YAPAMAYACAĞIM, GELECEKLER, GİDİLEBİLECEK -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">14882</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, GÖRÜŞÜLDÜ, YOKTU, KALDIK, TESİSTİ, KALDIM, İLGİLİYDİ, İLGİLENDİ -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">3048</feat><!-- EDERİM, VERİYORUM, İSTEMİYORUM, İSTİYORUM, VERİRİM, ETMEM, EDİYORUM, DEĞİLİM, EDERİZ, DEĞERLENDİRİRİM -->
+    <feat name="VerbForm" value="Conv" upos="VERB">1</feat><!-- GÖRÜŞTÜK -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">17444</feat><!-- GÜZELDİ, İYİYDİ, DEĞİLDİ, GÖRÜŞÜLDÜ, YOKTU, KALDIK, TESİSTİ, KALDIM, EDERİM, İLGİLİYDİ -->
+    <feat name="VerbForm" value="Part" upos="VERB">1</feat><!-- VERDİĞİNİZ -->
+    <feat name="VerbForm" value="Vnoun" upos="VERB">10</feat><!-- ORTALAMAYDI, KARŞILAMAYDI, DÜŞÜNMEMEKTEDİR -->
+    <feat name="Voice" value="Cau" upos="VERB">239</feat><!-- YAPTIRDI, YAPTIRMADIM, YÖNLENDİRDİ, YAPTIRDIM, SONLANDIRDI, YÖNLENDİRDİLER, BİLGİLENDİRDİ, ARATMADI, BEKLETTİLER, YAPTIRIYORUM -->
+    <feat name="Voice" value="CauPass" upos="VERB">10</feat><!-- ARTTIRILABİLİR, BEKLETİLDİK, BEKLETİLDİM, DEĞİŞTİRİLDİ, GELİŞTİRİLEBİLİR, GÜÇLENDİRİLMELİ, KALDIRILMIŞ, KONUMLANDIRILMIŞ, YÖNLENDİRİLDİK, YÖNLENDİRİLDİM -->
+    <feat name="Voice" value="Pass" upos="VERB">762</feat><!-- GÖRÜŞÜLDÜ, YAPILDI, VERİLDİ, ARANDIM, GİDİLEBİLECEK, EDİLMİŞTİ, SAYILIR, İLGİLENİLMEDİ, ANIL, ARANMADIM -->
+    <feat name="Voice" value="Rcp" upos="VERB">12</feat><!-- KARŞILAŞMADIK, KARŞILAŞTIM, KARŞILAŞAMADIK, KARŞILAŞMADIM, KARŞILAŞTIK, SIKIŞTIRMIŞLAR -->
+    <feat name="Voice" value="Rfl" upos="VERB">18</feat><!-- DEN, TEMİZLENDİ, TEMİZLENMİYORDU, TEMİZLENMEDİ, TEMİZLENİYORDU, DENECEK, DENMEDİ, TEMİZLENMEMİŞ, TEMİZLENİYOR -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="33">
+    <dep name="acl">829</dep>
+    <dep name="advcl">1277</dep>
+    <dep name="advmod">6875</dep>
+    <dep name="amod">3411</dep>
+    <dep name="appos">40</dep>
+    <dep name="aux">1286</dep>
+    <dep name="case">2364</dep>
+    <dep name="cc">1513</dep>
+    <dep name="ccomp">228</dep>
+    <dep name="clf">6</dep>
+    <dep name="compound">3949</dep>
+    <dep name="conj">1448</dep>
+    <dep name="csubj">83</dep>
+    <dep name="dep">70</dep>
+    <dep name="det">2853</dep>
+    <dep name="discourse">224</dep>
+    <dep name="dislocated">5</dep>
+    <dep name="fixed">51</dep>
+    <dep name="flat">82</dep>
+    <dep name="goeswith">64</dep>
+    <dep name="list">139</dep>
+    <dep name="mark">249</dep>
+    <dep name="nmod">6381</dep>
+    <dep name="nsubj">10217</dep>
+    <dep name="nummod">663</dep>
+    <dep name="obj">2958</dep>
+    <dep name="obl">2129</dep>
+    <dep name="orphan">1</dep>
+    <dep name="parataxis">2487</dep>
+    <dep name="punct">20092</dep>
+    <dep name="root">19749</dep>
+    <dep name="vocative">8</dep>
+    <dep name="xcomp">425</dep>
+  </deps>
+</treebank>

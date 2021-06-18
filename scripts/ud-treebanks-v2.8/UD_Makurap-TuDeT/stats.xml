@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>31</sentences><tokens>146</tokens><words>146</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>31</sentences><tokens>146</tokens><words>146</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="77" /><!-- tet, ngot, ke, kurux, mokat, xop, amang, eya, kepit, pit, kito, korop, me, oen, on -->
+  <forms unique="78" /><!-- etera, eya, ke, kurux, mokat, ngot, xop, amang, kepit, pit, kito, korop, me, on, pīxe -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="11">
+    <tag name="ADP">4</tag><!-- me, pe -->
+    <tag name="ADV">20</tag><!-- mokat, pīxe, ama, nãpẽrenã, op, peitõã, pit, pote, põrom, ten -->
+    <tag name="AUX">2</tag><!-- pīxe, ta -->
+    <tag name="CCONJ">4</tag><!-- kepit -->
+    <tag name="DET">6</tag><!-- xop, emẽ -->
+    <tag name="INTJ">2</tag><!-- i, ã -->
+    <tag name="NOUN">32</tag><!-- ngot, kito, arimot, iat, kux, moke, uro, ama, aup, ekup -->
+    <tag name="PART">15</tag><!-- ke, eya, koa, xēke, nitēt, xēt -->
+    <tag name="PRON">11</tag><!-- on, pit, õn, en, xeke -->
+    <tag name="PUNCT">2</tag><!-- , -->
+    <tag name="VERB">48</tag><!-- tet, kurux, amang, korop, oen, top, key, puk, ten, xok -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="19">
+    <feat name="Aspect" value="Hab" upos="NOUN">1</feat><!-- nẽnẽkaret -->
+    <feat name="Aspect" value="Imp" upos="VERB">29</feat><!-- etera, keya, nã, toa, amang, eapītera, ekuwaora, eya, kana, kixa -->
+    <feat name="Aspect" value="Perf" upos="VERB">13</feat><!-- kurux, amang, korop, oen, ngarap, pukpuga, xok -->
+    <feat name="Case" value="Gen" upos="NOUN">7</feat><!-- urot, xiaret, oxepngoret, worawiget, xauwet -->
+    <feat name="Deixis" value="Prox" upos="DET">1</feat><!-- xop -->
+    <feat name="Evident" value="Fh" upos="PART">2</feat><!-- ke -->
+    <feat name="Evident" value="Nfh" upos="PART">3</feat><!-- ke -->
+    <feat name="Nomzr" value="Ag" upos="NOUN">1</feat><!-- nẽnẽkaret -->
+    <feat name="Number" value="Sing" upos="PRON">7</feat><!-- on, õn, en -->
+    <feat name="Pcl" value="Dub" upos="PART">1</feat><!-- xēke -->
+    <feat name="Person" value="1" upos="AUX,NOUN,PRON,VERB">9</feat><!-- on, õn, opũãtemwã, ota, oxepngoret -->
+    <feat name="Person" value="2" upos="PRON">1</feat><!-- en -->
+    <feat name="Person" value="3" upos="PRON,VERB">17</feat><!-- etera, eapītera, ekuwaora, eya, kana, nã, oen, papīknga, xeke, xok -->
+    <feat name="Polarity" value="Neg" upos="PRON">3</feat><!-- pit -->
+    <feat name="PronType" value="Prs" upos="PRON">8</feat><!-- on, õn, en, xeke -->
+    <feat name="Reflex" value="Yes" upos="NOUN">2</feat><!-- etxekup, etyenkuax -->
+    <feat name="Rel" value="Cont" upos="NOUN,VERB">8</feat><!-- urot, xiaret, oxepngoret, worawiget, xagara, xauwet -->
+    <feat name="Tense" value="Fut" upos="PART">4</feat><!-- eya -->
+    <feat name="Tense" value="Past" upos="PART">1</feat><!-- xēt -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="16">
+    <dep name="advcl">2</dep>
+    <dep name="advmod">20</dep>
+    <dep name="aux">2</dep>
+    <dep name="case">4</dep>
+    <dep name="cc">3</dep>
+    <dep name="conj">3</dep>
+    <dep name="dep">17</dep>
+    <dep name="discourse">13</dep>
+    <dep name="nmod">7</dep>
+    <dep name="nsubj">9</dep>
+    <dep name="obj">12</dep>
+    <dep name="obl">4</dep>
+    <dep name="parataxis">14</dep>
+    <dep name="punct">2</dep>
+    <dep name="root">31</dep>
+    <dep name="xcomp">3</dep>
+  </deps>
+</treebank>
