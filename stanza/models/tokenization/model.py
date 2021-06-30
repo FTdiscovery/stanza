@@ -13,12 +13,28 @@ class Tokenizer(nn.Module):
 
         self.rnn = nn.LSTM(emb_dim + feat_dim, hidden_dim, num_layers=self.args['rnn_layers'], bidirectional=True, batch_first=True, dropout=dropout if self.args['rnn_layers'] > 1 else 0)
 
+        #self.args['conv_res'] = "3,5,9"                                                                                                                                                                                                                                                                                                     
+        #self.args['hierarchical'] = False                                                                                                                                                                                                                                                                                                   
+
         if self.args['conv_res'] is not None:
             self.conv_res = nn.ModuleList()
             self.conv_sizes = [int(x) for x in self.args['conv_res'].split(',')]
 
             for si, size in enumerate(self.conv_sizes):
-                l = nn.Conv1d(emb_dim + feat_dim, hidden_dim * 2, size, padding=size//2, bias=self.args.get('hier_conv_res', False) or (si == 0))
+                if size == 3:
+                    padding = 1
+                    dilation = 1
+                elif size == 5:
+                    padding = 6
+                    dilation = 3
+                elif size == 9:
+                    padding = 8
+                    dilation = 2
+                l = nn.Conv1d(emb_dim + feat_dim, hidden_dim * 2, size,padding=padding, dilation=dilation, bias=self.args.get('hier_conv_res', False) or\
+                               (si == 0))
+
+                #nn.Sequential(nn.Conv1d(emb_dim + feat_dim, hidden_dim * 2, size,padding=padding, dilation=dilation, bias=self.args.get('hier_conv_res', False) or (si == 0)),                                                                                                                                                              
+                #nn.Dropout(0.2))                                                                                                                                                                                                                                                                                                            
                 self.conv_res.append(l)
 
             if self.args.get('hier_conv_res', False):
@@ -40,6 +56,9 @@ class Tokenizer(nn.Module):
         self.toknoise = nn.Dropout(self.args['tok_noise'])
 
     def forward(self, x, feats):
+
+#        print(x)                                                                                                                                                                                                                                                                                                                            
+#        print(feats)                                                                                                                                                                                                                                                                                                                        
         emb = self.embeddings(x)
 
         emb = self.dropout(emb)
@@ -51,8 +70,19 @@ class Tokenizer(nn.Module):
         if self.args['conv_res'] is not None:
             conv_input = emb.transpose(1, 2).contiguous()
             if not self.args.get('hier_conv_res', False):
+
+                """                                                                                                                                                                                                                                                                                                                          
+                conv1 = self.conv_res[0](conv_input).transpose(1, 2).contiguous()                                                                                                                                                                                                                                                            
+                conv2 = self.conv_res[1](conv_input).transpose(1, 2).contiguous()                                                                                                                                                                                                                                                            
+                conv3 = self.conv_res[2](conv_input).transpose(1, 2).contiguous()                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                             
+                inp = torch.stack((conv1, conv2, conv3), 3)                                                                                                                                                                                                                                                                                  
+                inp, _ = torch.max(inp, 3)                                                                                                                                                                                                                                                                                                   
+                """
                 for l in self.conv_res:
                     inp = inp + l(conv_input).transpose(1, 2).contiguous()
+
             else:
                 hid = []
                 for l in self.conv_res:
@@ -96,3 +126,12 @@ class Tokenizer(nn.Module):
             pred = torch.cat([nontok, tok+nonsent, tok+sent], 2)
 
         return pred
+
+
+
+
+
+
+
+
+
